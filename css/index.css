@@ -47,6 +47,10 @@ body{
 .list ul li{
     margin-bottom: 2rem;
 }
+.list ul li a{
+text-decoration: none;
+color: black;
+}
 
 .list-aside a:hover{
     background-color:#cee6e4 ;

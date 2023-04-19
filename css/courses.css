@@ -48,9 +48,8 @@ body{
     margin-bottom: 2rem;
 }
 .list ul li a{
-    text-decoration: none;
-    color: black;}
-
+text-decoration: none;
+color: black;}
 .list-aside a:hover{
     background-color:#cee6e4 ;
 }
@@ -72,29 +71,8 @@ body{
 #main{    margin:0;
     height: 100vh;
 }
-#btn-title{
-    background-color: #f1f1f1;
-    color: black;
-}
-#btn-title2{
-    background-color:#088178;
-    color: rgb(255, 255, 255);
-}
-#title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-.form{
-    background-color: #ffffff;
-    border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin: 2rem 2rem;
-  padding: 2rem;
-}
-#flexRadioDefault2:checked {
-    background-color: #198754;
-    border-color: #198754;
+#btn-course{
+    background-color: #088178;
+    color: #d5fbf8;
+    border: solid #088178 1px ;
 }
