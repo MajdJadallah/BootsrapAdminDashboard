@@ -108,19 +108,19 @@ box-sizing: border-box;
         z-index: 9;
 }
 .courses-style{
-  font-size: .9rem;
-  list-style:disc;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-}
-.courses-style li{
-  font-size: .8rem;
-  list-style:disc;
-  margin-bottom: 1rem;
-}
-#aside-list{
-  margin-bottom: 2rem;
-}
+    font-size: .9rem;
+    list-style:disc;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .courses-style li{
+    font-size: .8rem;
+    list-style:disc;
+    margin-bottom: 1rem;
+  }
+  #aside-list{
+    margin-bottom: 2rem;
+  }
 .bi{
     color: #ADB5BD;
 }
@@ -162,7 +162,6 @@ header{
     margin-top: 2rem;
     background: #F8F9FA;
     width:90%;
-    color: #4F5D77;
 }
 .content-header{
     display: flex;
@@ -183,75 +182,171 @@ header #nav-body{
     border: 1px solid  #409B95;
     fill: #409B95;
 }
-.list ul{
-    list-style: none;
-    padding-left: 1rem;
+ .icon{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    padding-right: 1rem;
 }
-.list ul li{
-    margin-bottom: 2rem;
+.icon img{
+    color: #409B95;
+    background-color: #409b95;
+    border-radius: 100%;
+    width: 32px;
+    margin: .9rem;
 }
-.list ul li a{
-    text-decoration: none;
-    color: black;}
+.icon{
+text-align: center;
+font-size: 1.3rem;
+font-weight: 600;
+padding: .1rem;
+color: #4F5D77;
+}
+#image img{
+    width:100%;
+    height: 100%;
+    border-radius: 15px;
+}
+#assets img{
+    border-radius:15px;
+    margin: 3rem 0;
+    width:100%;
+    height: 50%;
+}
 
-.list-aside a:hover{
-    background-color:#cee6e4 ;
+#cards{
+    margin: 3rem 0;
 }
-.dash h1{
+#chart{
+    width: 100%;
+}
+#country{
+    width: 100%;
+}
+#activities{
+    width: 100%;
+}
+#new-member{
+    width: 100%;
+}
+#country{
+    width: 50%;
+}
+#charts-statics{
+    padding: 0 2rem;
+}
+#member{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-right: 2rem;
+    padding: 1rem;
     margin-top: 2rem;
-}
-.first{
-    color: #088178;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-}
-#sec-logo{
-    font-size: 1.4rem;
+    border-radius: 15px;
+    padding-right: 1rem;
+ border: 1px solid #F7F8F9;
+ font-weight:600;
 
 }
-.second{color: black;
-}
-#main{    margin:0;
-    height: 100vh;
-}
-#btn-title{
-    background-color: #f1f1f1;
-    color: black;
-}
-#btn-title2{
-    background-color:#088178;
-    color: rgb(255, 255, 255);
-}
-#title{
+.member1{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.member-imge{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+#add-btn{
+    background-color: #409B95;
+    border: #409B95;
+    color: white;
+    text-align: center;
     align-items: center;
+    padding-bottom: -.5rem;
+}
+#Activities{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-right: 2rem;
     margin-top: 2rem;
-    margin-left: 2rem;
-}
-.form{
-    background-color: #ffffff;
     border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin: 2rem 2rem;
-  padding: 2rem;
+    padding: 2rem;
+ border: 1px solid #F7F8F9;
+ font-weight:600; 
 }
-#flexRadioDefault2:checked {
-  border-color: #409B95;
-  background-color: #409B95;
+.activity{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.arrow-imge{
+    fill: #409B95;
+    width: 32px;
 }
 #counter{
     margin-top: 3rem;
-    margin-left: 40%;
+    margin-left: 50%;
     text-align: center;
 }
 #box #box-no{
-    color: #409B95;
+   color: #409B95;
+    border-color: #409B95;
+}
+
+#box-no-active{
+    color: #ffffff;
      border-color: #409B95;
+     background-color: #409B95;
  }
- #box-no-active{
-     color: #ffffff;
-      border-color: #409B95;
-      background-color: #409B95;
-  }
+#area-image img{
+    width: 89%;
+}
+#last-student{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 15px;
+    padding: 2rem;
+ border: 1px solid #F7F8F9;
+ font-weight:200;  
+ font-size: .8rem;
+}
+#view-details-btn{
+    background-color: #409B95;
+    color: white;
+    border: #409B95;
+    font-size: .8rem;
+}
+#table-last-student{
+    text-align: center;
+}
+.even{
+    background-color: white;
+    background: none;
+    font-weight: 200;
+    font-size: .8rem;
+}
+ #review-class{
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    border: #575758;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: .5rem;
+    align-items: center;
+    color: #575758;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

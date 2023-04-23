@@ -82,7 +82,6 @@ box-sizing: border-box;
     color: #409B95;
     font-size: 1.5rem;
   }
-  
   .logo2{
     color: #409B95;
   }
@@ -167,6 +166,7 @@ header{
 .content-header{
     display: flex;
     justify-content: space-between;
+    margin-left: 2rem;
 }
 header #nav-body{
     background-color: white;
@@ -201,7 +201,7 @@ header #nav-body{
     margin-top: 2rem;
 }
 .first{
-    color: #088178;
+    color: #409B95;
     font-size: 2rem;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -220,7 +220,7 @@ header #nav-body{
     color: black;
 }
 #btn-title2{
-    background-color:#088178;
+    background-color:#409B95;
     color: rgb(255, 255, 255);
 }
 #title{
@@ -230,28 +230,37 @@ header #nav-body{
     margin-top: 2rem;
     margin-left: 2rem;
 }
-.form{
-    background-color: #ffffff;
+.first-row-form{
+    display: flex;
+    justify-content: space-between;
+}
+#form-button{
+        background-color:#409B95;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #card{
+        background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2rem;
+    padding: 1rem;
     border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin: 2rem 2rem;
-  padding: 2rem;
-}
-#flexRadioDefault2:checked {
-  border-color: #409B95;
-  background-color: #409B95;
-}
-#counter{
-    margin-top: 3rem;
-    margin-left: 40%;
+    padding-right: 1rem;
     text-align: center;
+    }
+    #forms-input .message{
+        height:8rem;
+    }
+    #forms-input{
+        margin-top: 2rem;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
 }
-#box #box-no{
-    color: #409B95;
-     border-color: #409B95;
- }
- #box-no-active{
-     color: #ffffff;
-      border-color: #409B95;
-      background-color: #409B95;
-  }

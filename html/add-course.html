@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.111.3">
-    <title>Admin dash board</title>
+    <title>Add</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
 <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="stylesheet" href="\css\index.css">
+<link rel="stylesheet" href="/css/add-courses.css">
 <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
@@ -124,7 +124,7 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
               type="button"
@@ -157,9 +157,8 @@
           </button>
         </li>
       </ul>
-    </div>
+    </div> -->
 
-    
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
     <title>Bootstrap</title>
@@ -204,9 +203,9 @@
                     <strong><span class="logo1">B <span class="second">-Station</span></span></strong>
                   </a>
                   <hr>
-                  <ul class="nav nav-pills flex-column mb-auto">
+                  <ul class="nav nav-pills flex-column mb-auto" id="aside-list">
                     <li>
-                      <a href="/index.html" class="nav-link active"aria-current="page" id="active-item">
+                      <a href="/index.html" class="nav-link link-body-emphasis" >
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                         Dashboard
                       </a>
@@ -221,7 +220,7 @@
                       <div>
                         <ul class="courses-style">
                           <li>
-                            <a href="/html/add-course.html" class="nav-link link-body-emphasis">
+                            <a href="/html/add-course.html" class="nav-link active"aria-current="page" id="active-item">
                             Add Courses
                           </a></li>
                           <li> <a href="#" class="nav-link link-body-emphasis">
@@ -229,9 +228,7 @@
                           </a></li>
                         </ul>
                        </div>
-                    </div>
-                  </li>
-                   
+                    </div></li>
                     <li>
                       <a href="#" class="nav-link link-body-emphasis">
                         <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
@@ -282,8 +279,8 @@
                           <div class="col-12">
                               <div class="content-header">
                                   <div>
-                                      <h2 class="content-title card-title">Dashboard </h2>
-                                      <p>Whole data about your school here</p>
+                                      <h2 class="content-title card-title">Add Courses</h2>
+                                      <p>Add a new course from here</p>
                                   </div>
                                   <div>
                                       <a href="#" class="btn btn-primary" id="Create-report"><i class="text-muted material-icons md-post_add"></i>Create report</a>
@@ -291,283 +288,79 @@
                               </div>
                           </div>
                       </div>
-              <div class="row"id="cards">
-              <div class="col">
-                  <div class="container"id="total" >
-                      <div class="row justify-content-between">
-                          <div class="col-md-3"id="card card1" ><div class="icon">
-                              <img src="/assets/icon/growth.png" alt="home icon">
-                              <div class="txt-icon">
-                              <p>
-                                  Revenue
-                                  </p><p>$13,456.5</p></div>
-                          </div>
-                          </div>
-                          <div class="col-md-3"id="card card1" ><div class="icon">
-                              <img src="/assets/icon/subscribe.png" alt="home icon">
-                              <div class="txt-icon">
-                              <p>subscriber</p><p>2000+</p></div>
-                          </div>
-                          </div>
-    
-                          <div class="col-md-3"id="card card2" ><div class="icon">
-                              <img src="/assets/icon/education.png" alt="home icon">
-                              <div class="txt-icon">
-                              <p>Courses</p><p>500 courses</p></div>
-                          </div> </div>
-                          <div class="col-md-3"id="card card3" ><div class="icon">
-                              <img src="/assets/icon/salary.png" alt="home icon">
-                              <div class="txt-icon">
-                              <p>Monthly Earnings</p><p>6000$</p></div>
-              </div>
+                      <div class="row">
+                        <div class="col-7">
+                          <form action=""class="form">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Product title</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"style="background-color: #F4F5F9;">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Categroy</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"style="background-color: #F4F5F9;">
+                                
+                              </div>
+                        </form>
+                        <form action=""class="form">
+                            <div>
+                                <label for="exampleInputPassword1" class="form-label">Description</label>
+                                <textarea class="form-control" placeholder="describe your new course" id="floatingTextarea2" style="height: 100px;"></textarea>
+                              </div>
+                        </form>
+                        <form action=""class="form">
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Upload media</label>
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
+                              <button type="submit" class="btn btn-primary" id="btn-title2">Continue to next </button>
+        
+                        </form>
+
+                        </div>
+                        <div class="col-5">
+                          <form action=""class="form">
+                              <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Price</label>
+                                  <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">status</label>
+                                    <input class="form-control dropdown-toggle" type="input" data-bs-toggle="dropdown" aria-expanded="false"placeholder="course status">
+                                    </input>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Start</a></li>
+                                      <li><a class="dropdown-item" href="#">End</a></li>
+                                      <li><a class="dropdown-item" href="#">Still</a></li>
+                                    </ul>
+                        
+                                </div>
+                                <div class="mb-3 form-check">
+                                </div>
+                                <p>Categories</p>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    Front-end
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                  <label class="form-check-label" for="flexRadioDefault2">
+                                    Back-end
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input check-color" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                  <label class="form-check-label" for="flexRadioDefault2">
+                                   UI/UX
+                                  </label>
+                                </div> </div>
+                          </form>
+                         
                       </div>
                   </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row"id="image">
-        <div class="container"id="charts-statics">
-        <div class="row">
-            <div class="col-8"id="chart1" >
-                <div class="card mb-4">
-                    <article class="card-body">
-                        <h5 class="card-title">Sale statistics</h5>
-                        <canvas id="myChart" height="120px"></canvas>
-                    </article>
-                </div>
-                      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                      <script>
-                        const ctx = document.getElementById('myChart');
-                        new Chart(ctx, {
-                          type: 'bar',
-                          data: {
-                            labels: ['Jan', 'Feb', 'March', 'Apr', 'May', 'Jun','July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                            datasets: [{
-                              label: 'Sales',
-                              data: [12, 19, 3, 5, 2, 3,20,6,10,18,30,5],
-
-                              borderWidth: 1
-                            }]
-                          },
-                          options: {
-                            scales: {
-                              y: {
-                                beginAtZero: true
-                              }
-                            }
-                          }
-                        });
-                        const chart = new Chart(ctx, {
-type: 'line',
-data: data,
-options: {
-    plugins: {
-        subtitle: {
-            display: true,
-            text: 'Custom Chart Subtitle'
-        }
-    }
-}
-});</script>
-
-            </div>
-            <div class="col-4"id="area-image">
-                <img src="/assets/image/area.jpg" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4"id="member">
-                <p>New Member</p>
-                <div class="member1">
-                    <div class="member-imge"><img src="/assets/image/p1.jpg" alt="person1"></div>
-                     <div class="Name">Yasmeen Omar</div>
-                    <div class="btn"id="add-btn">+Add</div>
-                </div>
-                <div class="member1">
-                    <div class="member-imge"><img src="/assets/image/p2.jpg" alt="person1"></div>
-                     <div class="Name">Omar Amjad</div>
-                    <div class="btn"id="add-btn">+Add</div>
-                </div>
-                <div class="member1">
-                    <div class="member-imge"><img src="/assets/image/p3.jpg" alt="person1"></div>
-                     <div class="Name">Sara Yousef</div>
-                    <div class="btn"id="add-btn">+Add</div>
-                </div>
-                <div class="member1">
-                    <div class="member-imge"><img src="/assets/image/p4.jpg" alt="person1"></div>
-                     <div class="Name">Baraa Ayman</div>
-                    <div class="btn"id="add-btn">+Add</div>
-                </div>
-                <div class="member1">
-                    <div class="member-imge"><img src="/assets/image/p5.jpg" alt="person1"></div>
-                     <div class="Name">Hadi Adham</div>
-                    <div class="btn"id="add-btn">+Add</div>
-                </div>
-        </div>
-            <div class="col-7"id="Activities">
-                <p>Recent Activities</p>
-                <div class="activity">
-                    <div class="Name"><p class="day">Today</p> </div>
-                    <div class="arrow-imge"><img src="/assets/icon/arrow-right.svg" alt="person1"></div>
-                     <div class="Name">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="activity">
-                    <div class="Name"><p class="day">17 May</p> </div>
-                    <div class="arrow-imge"><img src="/assets/icon/arrow-right.svg" alt="person1"></div>
-                    <div class="Name">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="activity">
-                    <div class="Name"><p class="day">17 May</p> </div>
-                    <div class="arrow-imge"><img src="/assets/icon/arrow-right.svg" alt="person1"></div>
-                    <div class="Name">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="activity">
-                    <div class="Name"><p class="day">16 May</p> </div>
-                    <div class="arrow-imge"><img src="/assets/icon/arrow-right.svg" alt="person1"></div>
-                    <div class="Name">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-                <div class="activity">
-                    <div class="Name"><p class="day">15 May</p> </div>
-                    <div class="arrow-imge"><img src="/assets/icon/arrow-right.svg" alt="person1"></div>
-                    <div class="Name">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                </div>
-            </div>
-        </div>
-        </div>
-  </div>
-  <div class="row"id="last-student">
-    <div class="col-12">
-        <h2>Last Students</h2>
-        <div class="table-responsive"id="table-last-student">
-            <table class="table">
-              <thead>
-                <tr class="odd">
-                  <th scope="col">ID</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Course</th>
-                  <th scope="col">Categroy</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="even">
-                  <td>995863</td>
-                  <td>Omar</td>
-                  <td>Php</td>
-                  <td>Back-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995864</td>
-                  <td>Ahmad</td>
-                  <td>html</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>99585</td>
-                  <td>Yara</td>
-                  <td>CSS</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995866</td>
-                  <td>Huda</td>
-                  <td>Java script</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>995867</td>
-                  <td>Suha</td>
-                  <td>React</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995868</td>
-                  <td>Majd</td>
-                  <td>Bootstrap</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="even"> 
-                  <td>995869</td>
-                  <td>Ayham</td>
-                  <td>Python</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn">Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995870</td>
-                  <td>Alaa</td>
-                  <td>tabular</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>995871</td>
-                  <td>Sara</td>
-                  <td>html</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995872</td>
-                  <td>Mohmmad</td>
-                  <td>php</td>
-                  <td>Front-end</td>
-                  <td><div class="btn"id="view-details-btn">Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>995873</td>
-                  <td>Duha</td>
-                  <td>UI/UX</td>
-                  <td>User-experince</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995874</td>
-                  <td>Shatha</td>
-                  <td>J-query</td>
-                  <td>Back-end</td>
-                  <td><div class="btn"id="view-details-btn">Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>995875</td>
-                  <td>Yasmeen</td>
-                  <td>Sass</td>
-                  <td>Back-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="odd">
-                  <td>995876</td>
-                  <td>Dania</td>
-                  <td>Twilland</td>
-                  <td>Back-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>995877</td>
-                  <td>Yara</td>
-                  <td>php</td>
-                  <td>Back-end</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-                <tr class="even">
-                  <td>995878</td>
-                  <td>Ayar</td>
-                  <td>UI/UX</td>
-                  <td>User-experince</td>
-                  <td><div class="btn"id="view-details-btn"> Details</div></td>
-                </tr>
-              </tbody>
-            </table>
-    </div>
- 
-      </div>
+                      </div>
+                    </div>
   </div>
 </div>
   <div class="pagination-area mt-30 mb-50"id="counter">
